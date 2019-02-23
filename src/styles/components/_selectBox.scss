@@ -1,0 +1,61 @@
+
+.selectBox-input-arrow{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .down{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    }
+}
+
+.selectBox-select{
+    z-index: 2;
+    background-color: $color-white;
+    position: absolute;
+    border-radius: 4px;
+    color:$color-black;
+    box-shadow: 0 3px 6px 1px $color-positive-lighter;
+    width: 250px;
+    height: 100px;
+    overflow-y: auto;
+    font-size: $font-size-s;
+    font-family: $mainfont;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    left:0; 
+}
+
+.li-item{
+    &:hover {
+            background-color:$color-selago;
+    }
+    &-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        &-image-text{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .image{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 10px;
+            }
+        .code{
+            display: inline-block;
+            justify-self: flex-end;
+            margin-left: 10px;
+        }
+    }
+} 
+
+
+
